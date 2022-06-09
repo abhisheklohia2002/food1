@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random</title>
+    <link rel="stylesheet" href="/food1_import/index.css">
+
+</head>
+<body>
+    <div id="navbar">
+      
+    </div>
+    <div id="div1"><input type="text" name=""  id="name_input">
+        <div id="name">
+
+        </div>
+    </div>
+
+    <section id="section">
+
+    </section>
+</body>
+</html>
+<!-- <script src="/food1_import/script/random.js"></script> -->
+<script type="module">
+ import navbar from "./script/random.js";
+ import {showInfo,Method,displayData,getInfo,append,main,debounceMethod} from "./script/random.js";
+var nav = document.getElementById("navbar");
+nav.innerHTML= navbar();
+
+
+
+
+let out = Method();
+document.getElementById("name_input").addEventListener("input",runprogram)
+
+
+async function runprogram(){
+    let  step1 = await main();
+    var box = document.getElementById("name");
+let step2 = append(step1,box);
+
+let step3 =await getInfo(step2);
+console.log(step2,"2")
+var box = document.getElementById("section");
+let step4 = displayData(step3,box);
+
+
+
+}
+</script>

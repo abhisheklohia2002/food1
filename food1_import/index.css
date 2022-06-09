@@ -1,0 +1,80 @@
+#navbar{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: azure;
+    border: 2px solid brown;
+    font-size: 2vw;
+}
+#name_input{
+    height: 3vw;
+    width: 30vw;
+    font-size: 23px;
+}
+#div1{
+    text-align: center;
+    padding-top: 5vw;
+   
+}
+#name{
+    background-color: aqua;
+    height: 10vw;
+    width: 30.5vw;
+    margin: auto;
+    border: 2px solid black;
+    overflow-y: scroll;
+}
+#box{
+   
+    font-size: 18px;
+    margin-bottom: 1vw;
+}
+#box:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(97, 91, 91);
+}
+
+#iframe{
+    height: 15vw;
+    width: 20vw;
+}
+#main_box{
+  width: 21vw;
+  text-align: center;
+  margin: auto;
+  font-size: 2vw;
+}
+#section{
+    margin-top: 5vw;
+    justify-items: center;
+ 
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px ;
+   column-gap: 18vw;
+   row-gap: 5vw;
+   margin-top: 3vw;
+
+ 
+   
+    
+}
+#thumbimg{
+    height: 18vw;
+    width: 20vw;
+
+}
+
+#collect{
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2vw;
+    height: 25vw;
+    width: 20vw;
+    border: 2px solid black;
+}
+#demo{
+    font-size: 2vw;
+}

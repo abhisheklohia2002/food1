@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nmae</title>
+    <link rel="stylesheet" href="index.css">
+    
+
+</head>
+<body>
+    
+    <div id="navbar">
+      
+    </div> 
+    <div id="div1"><input type="text" name="" id="name_input"/>
+        <div id="name">
+
+        </div>
+    </div>
+   
+</body>
+</html>
+
+
+ <script type="module">
+     
+ import {debounceMethod,append,main} from "./script/name.js";
+ import navbar from "./script/name.js";
+
+var nav = document.getElementById("navbar");
+nav.innerHTML = navbar();
+
+
+ document.getElementById("name_input").addEventListener("input",runprogram);
+
+ async function runprogram(){
+   var value = document.getElementById("name_input").value;
+  let x = await main();
+  console.log(x)
+
+//    let out = debounceMethod(x,1000);
+    var box = document.getElementById("name");
+
+   append(x,box);
+
+
+
+
+ }
+
+</script>
+     
+
+
+ 
+
+  
+     
+
+   
+
+
+
+
+
+  
+
+  
+    
+
+
